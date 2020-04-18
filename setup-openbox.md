@@ -61,3 +61,37 @@ inxi -F
 
 ## Compile python
 
+```console
+version_36="3.6.10"
+version_37="3.7.7"
+version_38="3.8.2"
+cwd=$(pwd)
+
+cd /tmp
+
+rm -f Python-$version_36.tgz
+wget https://www.python.org/ftp/python/$version_36/Python-$version_36.tgz
+tar xvzf Python-$version_36.tgz
+cd Python-$version_36
+./configure --enable-optimizations
+make -j 8
+sudo make altinstall
+
+rm -f Python-$version_37.tgz
+wget https://www.python.org/ftp/python/$version_37/Python-$version_37.tgz
+tar xvzf Python-$version_37.tgz
+cd Python-$version_37
+./configure --enable-optimizations
+make -j 8
+sudo make altinstall
+
+rm -f Python-$version_38.tgz
+wget https://www.python.org/ftp/python/$version_38/Python-$version_38.tgz
+tar xvzf Python-$version_38.tgz
+cd Python-$version_38
+./configure --enable-optimizations
+make -j 8
+sudo make altinstall
+
+cd $cwd
+```
