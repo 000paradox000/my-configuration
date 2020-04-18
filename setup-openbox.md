@@ -106,3 +106,19 @@ sudo make altinstall
 
 cd $cwd
 ```
+
+## Virtualenvwrapper
+
+```console
+sudo pip install virtualenvwrapper
+
+echo "export WORKON_HOME=\$HOME/venv" >> $HOME/.bashrc
+echo "export PROJECT_HOME=$HOME/instances" >> $HOME/.bashrc
+echo "source /usr/local/bin/virtualenvwrapper.sh" >> $HOME/.bashrc
+```
+
+## vimrc
+
+```console
+echo -e "set background=dark\nsyntax on\nset ruler\nset nu\nset nobackup\nfiletype on\ncolorscheme torte\nset nocompatible\nset showmatch" > $HOME/.vimrc
+```
