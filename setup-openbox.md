@@ -8,8 +8,8 @@ desktop or window manager.
 ## Set sources.list
 
 ```console
-sed -i 's/buster/stable/g' /etc/apt/sources.list
-sed -i 's/ main/ main contrib non-free/g' /etc/apt/sources.list
+sudo sed -i 's/buster/stable/g' /etc/apt/sources.list
+sudo sed -i 's/ main/ main contrib non-free/g' /etc/apt/sources.list
 
 sudo apt-get update && \
 sudo apt-get -y upgrade && \
@@ -24,10 +24,11 @@ sudo apt-get -y install \
   dkms mc vim net-tools lightdm openbox menu obconf inxi vim-gtk \
   geany geany-plugins emacs tint2 nitrogen obmenu gtk-theme-switch \
   gtk2-engines light-locker tmux terminator git postgresql libpq-dev \
-  python-pip mysql build-essential checkinstall libreadline-gplv2-dev \
-  libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev \
-  libc6-dev libbz2-dev libffi-dev zlib1g-dev apt-transport-https \
-  ca-certificates curl gnupg-agent software-properties-common gmrun
+  python-pip mariadb-server build-essential \
+  libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev \
+  tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev \
+  apt-transport-https ca-certificates curl gnupg-agent \
+  software-properties-common gmrun vlc texlive-full
 ```
 
 ## Install docker
