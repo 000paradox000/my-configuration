@@ -71,7 +71,7 @@ cwd=$(pwd)
 
 cd /tmp
 rm -f Python-$version_27.tgz
-wget https://www.python.org/ftp/python/$version_36/Python-$version_27.tgz
+wget https://www.python.org/ftp/python/$version_27/Python-$version_27.tgz
 tar xvzf Python-$version_27.tgz
 cd Python-$version_27
 ./configure --enable-optimizations
