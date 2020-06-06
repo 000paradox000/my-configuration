@@ -22,13 +22,13 @@ sudo apt-get -y autoremove
 ```console
 sudo apt-get -y install \
   dkms mc vim net-tools lightdm openbox menu obconf inxi vim-gtk \
-  geany geany-plugins emacs tint2 nitrogen obmenu gtk-theme-switch \
+  geany geany-plugins emacs tint2 nitrogen gtk-theme-switch \
   gtk2-engines light-locker tmux terminator git postgresql libpq-dev \
   python-pip mariadb-server build-essential \
   libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev \
   tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev \
   apt-transport-https ca-certificates curl gnupg-agent \
-  software-properties-common gmrun vlc texlive-full
+  software-properties-common gmrun vlc texlive-full liblzma-dev openvpn resolvonf
 ```
 
 ## Install docker
