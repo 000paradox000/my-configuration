@@ -28,7 +28,7 @@ sudo apt-get -y install \
   libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev \
   tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev \
   apt-transport-https ca-certificates curl gnupg-agent \
-  software-properties-common gmrun vlc texlive-full liblzma-dev openvpn resolvonf
+  software-properties-common gmrun vlc texlive-full liblzma-dev openvpn resolvconf
 ```
 
 ## Install docker
